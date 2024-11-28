@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TinyDallasApp.MainPage"
+             Title="Tiny"
+             BackgroundColor="#CBC3E3">
+    <StackLayout Padding="20">
+        <Label Text="We are a family-owned Sweet Snack Bar, focused on homemade recipes."
+               FontSize="Title"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Button Text="Make Reservation"
+        FontSize="Large"
+        WidthRequest="300"
+        HeightRequest="50"
+        Clicked="OnMakeReservationClicked" />
+        <Image
+            Source="tiny.png"
+            HeightRequest="500"
+            WidthRequest="300"
+            HorizontalOptions="Center"
+            />
+    </StackLayout>
+</ContentPage>

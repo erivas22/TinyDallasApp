@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+             x:Class="TinyDallasApp.ReservationPage"
+             Title="ReservationPage">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Place, Date and Time" FontAttributes="Bold" FontSize="Medium" />
+
+            <DatePicker x:Name="DatePicker" MinimumDate="{x:Static sys:DateTime.Today}" />
+
+            <TimePicker x:Name="TimePicker" Time="18:00" />
+
+            <Label Text="Location:" />
+            <Entry x:Name="LocationEntry" Keyboard="Text" Placeholder="Location" />
+
+            <Label Text="Adults:" />
+            <Entry x:Name="AdultsEntry" Keyboard="Numeric" Placeholder="Number of adults" />
+
+            <Label Text="Children:" />
+            <Entry x:Name="ChildrenEntry" Keyboard="Numeric" Placeholder="Number of children" />
+
+            <Label Text="Special requests:" />
+            <Editor x:Name="SpecialRequestsEditor" HeightRequest="100" Placeholder="Any special requests?" />
+
+            <Label Text="Enter Phone Number:"/>
+            <Editor x:Name="PhoneNumberEntry" Placeholder="Example: 8008008000" Keyboard="Telephone" />
+
+            <Button Text="Continue" Clicked="OnContinueClicked" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

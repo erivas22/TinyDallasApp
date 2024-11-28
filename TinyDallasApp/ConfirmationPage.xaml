@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TinyDallasApp.ConfirmationPage"
+             Title="ConfirmationPage">
+    <StackLayout Padding="20" Spacing="20">
+        <!-- Page Title -->
+        <Label Text="Reservation Details" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+
+        <!-- Date Section -->
+        <Frame BackgroundColor="#D3A4FF" CornerRadius="10" Padding="5">
+            <StackLayout>
+                <Label Text="Date" FontAttributes="Bold" FontSize="Medium" TextColor="White" />
+                <Label x:Name="DateLabel" TextColor="White" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Time Section -->
+        <Frame BackgroundColor="#D3A4FF" CornerRadius="10" Padding="5">
+            <StackLayout>
+                <Label Text="Time" FontAttributes="Bold" FontSize="Medium" TextColor="White" />
+                <Label x:Name="TimeLabel" TextColor="White" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Adults Section -->
+        <Frame BackgroundColor="#D3A4FF" CornerRadius="10" Padding="5">
+            <StackLayout>
+                <Label Text="Adults" FontAttributes="Bold" FontSize="Medium" TextColor="White" />
+                <Label x:Name="AdultsLabel" TextColor="White" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Children Section -->
+        <Frame BackgroundColor="#D3A4FF" CornerRadius="10" Padding="5">
+            <StackLayout>
+                <Label Text="Children" FontAttributes="Bold" FontSize="Medium" TextColor="White" />
+                <Label x:Name="ChildrenLabel" TextColor="White" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Special Requests Section -->
+        <Frame BackgroundColor="#D3A4FF" CornerRadius="10" Padding="5">
+            <StackLayout>
+                <Label Text="Special Requests" FontAttributes="Bold" FontSize="Medium" TextColor="White" />
+                <Label x:Name="SpecialRequestsLabel" TextColor="White" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Location Section -->
+        <Frame BackgroundColor="#D3A4FF" CornerRadius="10" Padding="5">
+            <StackLayout>
+                <Label Text="Location" FontAttributes="Bold" FontSize="Medium" TextColor="White" />
+                <Label x:Name="LocationLabel" TextColor="White" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Phone Number Section -->
+        <Frame BackgroundColor="#D3A4FF" CornerRadius="10" Padding="5">
+            <StackLayout>
+                <Label Text="Phone Number" FontAttributes="Bold" FontSize="Medium" TextColor="White" />
+                <Label x:Name="PhoneNumberLabel" TextColor="White" />
+            </StackLayout>
+        </Frame>
+        <!-- Continue Button -->
+        
+        <Button Text="Continue to Food Selection" Clicked="OnContinueClicked" HorizontalOptions="Fill" BackgroundColor="#D3A4FF" TextColor="White" CornerRadius="10" />
+    </StackLayout>
+</ContentPage>

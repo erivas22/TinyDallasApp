@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TinyDallasApp.ReservationSuccessPage"
+             Title="ReservationSuccessPage">
+    <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+        <Image
+         Source="checkmark.png"
+         HeightRequest="500"
+         WidthRequest="300"
+         HorizontalOptions="Center"
+        />
+        <Label Text="The Event has been reserved!"
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+        <Label Text="You will get a confirmation and reminder to your phone number."
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+
+
+        <Button Text="Return to Home" Clicked="OnReturnHomeClicked" />
+    </StackLayout>
+</ContentPage>
